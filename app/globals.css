@@ -2,25 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  /* Define a linear gradient background */
+body {  
   background: #010E28 !important;
-  /* Replace these colors with your desired ones */
-  /* Other styles for your body element */
-
+  overflow-x: hidden !important;
   font-family: 'Work Sans' !important;
   max-width: 100% !important;
 
 }
 
+.red {
+  color: red;
+}
+
+input,
+textarea {
+  background-color: #010E28 !important;
+  padding: 15px !important;
+}
+
+input::placeholder {
+  color: #8D8D8D !important;
+
+}
+
+.border-raduios-50 {
+  border-radius: 50% !important;
+}
+
+a {
+  text-decoration: none;
+}
+
 p {
   color: #FFF;
   font-family: "Work Sans" !important;
-  font-size: 20px !important;
-  line-height: 40px !important;
+
   font-style: normal !important;
-  font-weight: 400 !important;
-  line-height: 160% !important;
+
 }
 
 
@@ -59,11 +77,6 @@ p {
 }
 
 
-
-.about-us {}
-
-
-
 .earth-bg::before {
   content: "";
   position: absolute;
@@ -72,7 +85,7 @@ p {
   height: 374px;
   top: 10px;
   /* Adjust the vertical position of the shadow */
-  left: 10px;
+  left: 20px;
   /* Adjust the horizontal position of the shadow */
   background-color: #A51252;
   /* Adjust the shadow color and opacity */
@@ -101,40 +114,22 @@ p {
   color: white;
 }
 
-.box {
 
-  width: 479px;
-  height: 26px;
-  stroke-width: 8px;
-  stroke: #E7267A;
-  flex-shrink: 0;
-  margin-top: 30px;
-  margin-bottom: 30px;
-
-  border: solid 5px #E7267A;
-  border-color: #E7267A transparent transparent transparent;
-  border-radius: 60%/100px 100px 0 0;
-}
-
-@media screen and (max-width:600px) {
-  P {
-    text-align: center;
-  }
-}
 
 .phone-input {
-  width: 50% !important;
+
   background-color: #3e3e55 !important;
   color: white !important;
-  /* border-radius: 30px !important; */
-  padding: 15px !important;
-  margin-left: 20px !important;
+  /* border-radius: 30px !important;  */
+  padding: 10px !important;
+  /* margin-left: 20px !important; */
 }
 
 .phone-input::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: white !important;
   opacity: 1;
+  padding: 20px;
   /* Firefox */
 
 }
@@ -142,85 +137,12 @@ p {
 .Request-call {
   background-color: #3e3e55 !important;
   color: white !important;
-  /* border-radius: 30px !important; */
-  margin-right: 30px !important;
-  padding: 15px !important;
+  padding: 10px !important;
+  margin-left: 10px ;
+
 }
 
-@media screen and (max-width:600px) {
-  .phone-container {
-    display: block;
 
-  }
-
-  .phone-input {
-    width: 100% !important;
-    margin: 30PX !important;
-  }
-
-  .phone-containe div {
-    text-align: center;
-  }
-}
-
-.about-text {
-  background: linear-gradient(180deg, #451d44, #151b34);
-  ;
-  border-top-left-radius: 50px !important;
-  border-bottom-left-radius: 50px !important;
-  /* border-radius: 50px; */
-}
-
-@media screen and (max-width:1140px) {
-  .about-img {
-    display: none;
-  }
-
-  .about-text {
-    margin: auto !important;
-  }
-
-  .about-text {
-    background: linear-gradient(180deg, #451d44, #151b34);
-    ;
-    border-top-right-radius: 50px !important;
-    border-bottom-right-radius: 50px !important;
-  }
-}
-
-@media screen and (max-width:600px) {
-  .about-us {
-    width: 90% !important;
-    font-size: 16px !important;
-    background-color: unset !important;
-    margin: auto !important;
-  }
-
-  .about-us h2 {
-    font-size: 40px !important;
-    text-align: center !important;
-  }
-
-  .about-us p {
-    text-align: center !important;
-  }
-
-  .Hero h1 {
-    text-align: center;
-
-  }
-}
-
-.clients-num {
-  color: #E7267A !important;
-}
-
-.image-container {
-  position: relative;
-  width: 300px;
-  /* Adjust the width and height as needed */
-  height: 200px;
-}
 
 .background-image {
   width: 100% !important;
@@ -243,4 +165,282 @@ p {
   width: 50%;
   /* Adjust the size as needed */
   height: 50%;
+}
+
+.counter-title {
+  color: rgba(255, 255, 255, 0.80) !important;
+  text-align: center !important;
+  font-family: 'Work Sans' !important;
+  font-size: 32px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: normal !important;
+  text-transform: capitalize !important;
+}
+
+.counter-number {
+
+  color: #E7267A !important;
+  text-align: center !important;
+  font-family: 'Work Sans' !important;
+  font-size: 64px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: normal !important;
+}
+
+.WeCreateExperiencesThatPutPeopleInPrimarily::before {
+  position: absolute;
+  left: 196px;
+  top: 123px;
+  width: 53.314px;
+  height: 58.411px;
+  transform: rotate(95.346deg);
+  background-color: #A51252;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  filter: blur(225px);
+  width: 621px;
+  height: 374px;
+  top: 10px;
+  /* Adjust the vertical position of the shadow */
+  left: 20px;
+  /* Adjust the horizontal position of the shadow */
+  background-color: #A51252;
+  /* Adjust the shadow color and opacity */
+  z-index: -1;
+  /* Place the shadow behind the image */
+  border-radius: 5px;
+  /* Add rounded corners to the shadow */
+  box-shadow: 5px 5px 10px rgba(#A51252, #A51252, #A51252, 0.5);
+  /* Add a box shadow to the shadow itself */
+}
+
+.quote-pargraph {
+  color: #FFF;
+  font-family: Work Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.quote-mark {
+  width: 42px;
+  height: 42px;
+  color: #E7267A;
+}
+
+.gold {
+  color: yellow;
+  margin-right: 7px;
+}
+
+.card-img-top {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -30px;
+  width: 60px !important;
+  height: 60px;
+}
+
+.card {
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+
+
+.projects-bg {
+  border-radius: 16px;
+  background: #0F1933;
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.08);
+}
+@media screen and (max-width:768px) {
+  .about-text {
+    background: linear-gradient(180deg, #451d44, #151b34);
+    ;
+    border-top-left-radius: 24px !important;
+    border-bottom-left-radius: 24px !important;
+    /* border-radius: 50px;/ */
+  }
+ 
+  P {
+    font-size: 16px !important;
+  }
+  .sm-submit-btn{
+    width: 50%;
+    margin: 15px auto;
+  }
+  .about-img {
+    display: none;
+  }
+  
+  .about-text {
+    margin: auto !important;
+  }
+  
+  .about-text {
+    background: linear-gradient(180deg, #451d44, #151b34);
+    ;
+    border-top-right-radius: 24px !important;
+    border-bottom-right-radius: 24px !important;
+  }
+  .about-us {
+    width: 90% !important;
+    font-size: 16px !important;
+    background-color: unset !important;
+    margin: auto !important;
+  
+  }
+  
+  .counter-number,
+  .counter-title {
+    color: rgba(255, 255, 255, 0.80);
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+  
+  .project_Image {
+    width: 50%;
+    height: 50%;
+  }
+  
+  .project-image-container {
+    margin: 30px auto !important;
+    max-width: 100%;
+  }
+  
+  .about-us h2 {
+    font-size: 40px !important;
+    text-align: center !important;
+  }
+  
+  .about-us p {
+    text-align: center !important;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  .Hero h1 {
+    text-align: center;
+  
+  }
+  
+  
+  .clients-num {
+  color: #E7267A !important;
+  }
+  
+  .image-container {
+  position: relative;
+  
+  width: 75%;
+  height: 90%;
+  }
+  .WeCreateExperiencesThatPutPeopleInPrimarily {
+    font-size: 16px;
+  }
+  
+  .image-container {
+  
+  
+    width: 75%;
+    height: 90%;
+  }
+  
+  
+  .phone-sm-screen {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about-us {
+    margin: auto;
+  }
+
+  .phone-input {
+    width: 100% !important;
+
+  }
+
+  .Small-text-smScreens {
+    color: #FFF;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    line-height: 24px;
+    /* 150% */
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .justify-center-sm {
+    justify-content: center !important;
+  }
+
+  .sm-width-height {
+    width: 100px !important;
+    height: 100px !important;
+    position: none !important;
+  }
+
+  .services-contariner {
+    width: 250px !important;
+    height: 300px !important;
+    text-align: center;
+    margin: auto;
+  }
+
+  .services-contariner>div {
+    justify-content: center;
+    width: auto;
+  }
+
+
+  footer .logo-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer a {
+    color: var(--White, #FFF);
+    font-family: "Work Sans";
+    font-size: 12px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal !important;
+    margin-bottom: 14px !important;
+  }
+
+  .services-contariner p {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: "Work Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px
+  }
+
+  .text-center-sm {
+    text-align: center;
+  }
+
+  .phone-containe div {
+    text-align: center;
+  }
 }

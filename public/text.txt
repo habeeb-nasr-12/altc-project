@@ -1,0 +1,19 @@
+         <Container>
+                <Row>
+                    <Col xs={12} md={6}>
+                        <h2>Title</h2>
+                        <p>
+                            We are a leading force in technology promotion. With our roots in Saudi Arabia and a new chapter revealing itself in Egypt, we bring a wealth of experience and knowledge to empower businesses and organizations. Our primary interest is in exploiting the potential of modern concepts such as big data analytics, artificial intelligence, computer vision, and Internet of Things solutions
+                            
+                        </p>
+                    </Col>
+                    <Col xs={12} md={6}>
+                        <Image
+                            src="/about-img.png"
+                            className="w-full h-full"
+                            alt="Your Image"
+                            fluid
+                        />
+                    </Col>
+                </Row>
+            </Container>
